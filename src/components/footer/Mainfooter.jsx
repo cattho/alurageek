@@ -4,7 +4,7 @@ const Mainfooter = () => {
     return (
         <>
             <div className="footer-container">
-                <img src="src\assets\Logo.png" alt="imagen" />
+                <img src="https://res.cloudinary.com/dfp8qduho/image/upload/v1667318734/alurageek/ddauvvwohlpqdxkjtkcj.png" alt="imagen" />
                 <ul className="footer-list">
                     <li className="footer-list-item">Quienes somos</li>
                     <li className="footer-list-item">Politica de privacidad</li>

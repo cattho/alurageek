@@ -6,7 +6,7 @@ const NavBar = () => {
         <>
             <div className="navbar">
                 <div className='form-img-container'>
-                    <img src="src\assets\Logo.png" alt="logo-alura-geek" />
+                    <img src="https://res.cloudinary.com/dfp8qduho/image/upload/v1667318734/alurageek/ddauvvwohlpqdxkjtkcj.png" alt="logo-alura-geek" />
                     <Formheader />
                 </div>
                 <div className="button-container">
