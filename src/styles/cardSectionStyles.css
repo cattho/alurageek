@@ -1,0 +1,54 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-main {
+    margin: 30px;
+    height: auto;
+    padding: 0 4em;
+    width: 75.8%;
+    min-height: 300px;
+    min-width: 70%;
+}
+
+.section-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.section-title h2 {
+    font-size: 2em;
+    color: #464646;
+}
+
+.link-todo{
+    text-decoration: none;
+    color: #2A7AE4;
+    font-weight: 700;
+}
+
+.cards-container {
+    display: flex;
+    gap: 4.8em;
+    flex-wrap: nowrap;
+}
+
+.card-name{
+    font-size: 14px;
+}
+
+.price{
+    font-weight: 700;
+    color: #464646;
+    line-height: 2em;
+}
+
+.link-card{
+    text-decoration: none;
+    font-weight: 700;
+    color: #2A7AE4;
+}
