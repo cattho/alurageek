@@ -33,7 +33,7 @@
 
 .cards-container {
     display: flex;
-    gap: 4.8em;
+    gap: 3em;
     flex-wrap: nowrap;
 }
 

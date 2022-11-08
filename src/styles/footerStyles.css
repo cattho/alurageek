@@ -41,12 +41,17 @@
 }
 
 .form-footer-button{
+    border: none;
     max-width: 40%;
     font-size: 16px;
     padding: 16px;
     cursor: pointer;
     background-color: #2a7ae4;
     color: #f5f5f5;
+}
+
+.form-footer-button:hover{
+    opacity: 0.9;
 }
 
 .data-developer{
