@@ -6,12 +6,12 @@ import Starwarspage from './Starwarspage'
 const MainContainer = () => {
     return (
         <>
-        <Banner />
-        <div className='main-container'>
-            <Starwarspage />
-            <Consolas />
-            <Diversos />
-        </div>
+            <Banner />
+            <div className='main-container'>
+                <Starwarspage />
+                <Consolas />
+                <Diversos />
+            </div>
         </>
     )
 }

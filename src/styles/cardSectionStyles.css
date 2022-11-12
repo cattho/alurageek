@@ -15,7 +15,7 @@
 
 .section-title {
     display: flex;
-    width: 100%;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 1em;
 }
@@ -25,7 +25,7 @@
     color: #464646;
 }
 
-.link-todo{
+.link-todo {
     text-decoration: none;
     color: #2A7AE4;
     font-weight: 700;
@@ -33,21 +33,31 @@
 
 .cards-container {
     display: flex;
-    gap: 3em;
+    gap: 2.3em;
     flex-wrap: nowrap;
 }
 
-.card-name{
+.card {
+    border-radius: 4px;
+    padding: 0.2em;
+    box-shadow: 6px 4px 18px -5px rgba(0, 0, 0, 0.76);
+}
+
+.card-img{
+    border-radius: 2px 2px 1px 1px;
+}
+
+.card-name {
     font-size: 14px;
 }
 
-.price{
+.price {
     font-weight: 700;
     color: #464646;
     line-height: 2em;
 }
 
-.link-card{
+.link-card {
     text-decoration: none;
     font-weight: 700;
     color: #2A7AE4;
