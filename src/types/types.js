@@ -10,3 +10,10 @@ export const producTypes = {
     modify: 'modify',
     delete: 'delete'
 }
+
+export const dataTypes = {
+    FETCH_DATA_REQUEST: 'FETCH_DATA_REQUEST',
+    FETCH_DATA_SUCCES: 'FETCH_DATA_SUCCES',
+    FETCH_DATA_FAILURE: 'FETCH_DATA_FAILURE'
+}
+

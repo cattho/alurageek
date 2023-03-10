@@ -1,18 +1,3 @@
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section-main {
-    margin: 30px;
-    height: auto;
-    padding: 0 4em;
-    width: 75.8%;
-    min-height: 300px;
-    min-width: 70%;
-}
-
 .section-title {
     display: flex;
     align-items: center;
@@ -33,8 +18,8 @@
 
 .cards-container {
     display: flex;
-    gap: 2.3em;
     flex-wrap: nowrap;
+    gap: 2rem;
 }
 
 .card {
