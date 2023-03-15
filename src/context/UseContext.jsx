@@ -18,8 +18,8 @@ const UseContext = ({ children }) => {
         try {
             const res = await axios.get(url)
             dispatch({ type: 'FETCH_DATA_SUCCES', payload: res.data })
-            console.log(state)
         } catch (e) {
+            alert(e);
             dispatch({type:'FETCH_DATA_FAILURE'});
         }
 

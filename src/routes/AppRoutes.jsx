@@ -6,6 +6,7 @@ import NavBar from "../components/header/NavBar"
 import Login from "../components/login/Login"
 import RegisterUser from "../components/login/RegisterUser"
 import MainContainer from "../components/main/MainContainer"
+import ProductDescription from "../components/main/ProductDescription"
 import { PrivateRoutes } from "./PrivateRoutes"
 import { PublicRoutes } from "./PublicRoutes"
 
@@ -43,6 +44,10 @@ export const AppRoutes = () => {
                             <MainContainer isAuthenticated={isLoogged} />
                         </PublicRoutes>
                     } />
+
+                    <Route path="/descriptionProducto" element={
+                        <ProductDescription />
+                    }/>
                 </Routes>
             </BrowserRouter>
             <Mainfooter />

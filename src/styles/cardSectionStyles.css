@@ -17,15 +17,25 @@
 }
 
 .cards-container {
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 15rem);
+    padding: 1rem 0;
     gap: 2rem;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     border-radius: 4px;
     padding: 0.2em;
     box-shadow: 6px 4px 18px -5px rgba(0, 0, 0, 0.76);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    transform: translateY(-5px); 
+    box-shadow: 6px 8px 24px -5px rgba(0, 0, 0, 0.76); 
 }
 
 .card-img{
@@ -46,4 +56,5 @@
     text-decoration: none;
     font-weight: 700;
     color: #2A7AE4;
+    cursor: pointer;
 }

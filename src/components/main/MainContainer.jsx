@@ -1,22 +1,19 @@
 import { useContext, useEffect } from 'react'
 import Context from '../../context/Context'
-import UseContext from '../../context/UseContext'
 import Banner from '../header/Banner'
-import Consolas from './Consolas'
-import Diversos from './Diversos'
 import ProductsPage from './ProductsPage'
-import Starwarspage from './Starwarspage'
+
 
 
 
 const MainContainer = () => {
     const { getData, products } = useContext(Context);
-   
-    const getProductByType = productType => {
-        return products.filter(item => item.category === productType)
-    };
+    console.log(products);
 
-    const renderProducts = (products) => {
+    const getProductByType = productType => products.filter(item => item.category === productType)
+
+
+    const renderCardProducts = (products) => {
         return products.map(item => (
             <ProductsPage
                 key={item.id}
@@ -28,7 +25,10 @@ const MainContainer = () => {
         ))
     }
 
-    console.log(getProductByType('consolas'));
+    const renderTitle = (title) => {
+        return <div className='.section-title'><h2>{title}</h2></div>
+         
+    }
 
     useEffect(() => {
         getData()
@@ -39,11 +39,17 @@ const MainContainer = () => {
         <>
             <Banner />
             <div className='main-container'>
+                {renderTitle('Star-wars')}
                 <div className='cards-container'>
-                    {renderProducts(getProductByType('star-wars'))}
-                    {renderProducts(getProductByType('consolas'))}
-                    {renderProducts(getProductByType('varios'))}
-                    
+                    {renderCardProducts(getProductByType('star-wars'))}
+                </div>
+                {renderTitle('Consolas')}
+                <div className="cards-container">
+                    {renderCardProducts(getProductByType('consolas'))}
+                </div>
+                {renderTitle('Varios')}
+                <div className="cards-container">
+                    {renderCardProducts(getProductByType('varios'))}
                 </div>
             </div>
         </>
@@ -52,7 +58,3 @@ const MainContainer = () => {
 
 
 export default MainContainer
-
-{/* <Starwarspage />
-                <Consolas />
-                <Diversos /> */}
