@@ -6,13 +6,14 @@ import NavBar from "../components/header/NavBar"
 import Login from "../components/login/Login"
 import RegisterUser from "../components/login/RegisterUser"
 import MainContainer from "../components/main/MainContainer"
-import ProductDescription from "../components/main/ProductDescription"
 import { PrivateRoutes } from "./PrivateRoutes"
 import { PublicRoutes } from "./PublicRoutes"
 
 
 export const AppRoutes = () => {
     const [isLoogged, setIsLoogged] = useState(false);
+
+    console.log(isLoogged)
 
     useEffect(() => {
         const auth = getAuth()
@@ -45,9 +46,6 @@ export const AppRoutes = () => {
                         </PublicRoutes>
                     } />
 
-                    <Route path="/descriptionProducto" element={
-                        <ProductDescription />
-                    }/>
                 </Routes>
             </BrowserRouter>
             <Mainfooter />

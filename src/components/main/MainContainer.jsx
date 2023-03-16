@@ -8,7 +8,6 @@ import ProductsPage from './ProductsPage'
 
 const MainContainer = () => {
     const { getData, products } = useContext(Context);
-    console.log(products);
 
     const getProductByType = productType => products.filter(item => item.category === productType)
 
@@ -21,6 +20,8 @@ const MainContainer = () => {
                 image={item.image}
                 name={item.name}
                 price={item.price}
+                description={item.description}
+                id={item.id}
             />
         ))
     }

@@ -4,11 +4,10 @@ import Formheader from './Formheader'
 const NavBar = (props) => {
 
     const { isLoogged } = props;
-    // const dispatch = useDispatch()
 
-    // const handleLogout = () => {
-    //     dispatch(outLog())
-    // }
+    const handleLogOut = () =>{
+        outLog()
+    }
 
     return (
         <>
@@ -20,7 +19,7 @@ const NavBar = (props) => {
                 <div className="button-container">
                     {
                         isLoogged ?
-                            <button>Desconectar</button>
+                            <button onClick={()=>{handleLogOut}}>Desconectar</button>
                             :
                             <a href='/login'><button>Login</button></a>
                     }

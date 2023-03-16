@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useReducer, useState } from 'react'
-import { useEffect } from 'react';
 import { dataReducer } from '../reducers/dataReducer';
 import Context from './Context';
 
@@ -8,9 +7,11 @@ import Context from './Context';
 const UseContext = ({ children }) => {
     const initialState = {
         products: [],
-        shoppingCar: []
+        shoppingCar: [],
+        userIsloged: false
     };
     const [state, dispatch] = useReducer(dataReducer, initialState);
+    console.log(state);
     const url = 'https://alura-geek-89d87-default-rtdb.firebaseio.com/products.json';
 
 
@@ -29,6 +30,7 @@ const UseContext = ({ children }) => {
         <Context.Provider value={{
             products: state.products,
             shopCart: state.shoppingCar,
+            userlogged:state.userIsloged,
             getData
         }}>
             {children}
